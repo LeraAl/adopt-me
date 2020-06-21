@@ -9,9 +9,16 @@
     ],
     "rules": {
         "no-console": 1,
-        "react/prop-types": 0
+        "react/prop-types": 0,
+        "react/jsx-first-prop-new-line": [1, "multiline"],
+        "react/jsx-max-props-per-line": [
+            1,
+            { "maximum": 3, "when": "multiline" }
+        ],
+        "react-hooks/rules-of-hooks": 2,
+        "react-hooks/exhaustive-deps": 1
     },
-    "plugins": ["import", "react", "jsx-a11y"],
+    "plugins": ["import", "react", "jsx-a11y", "react-hooks"],
     "parserOptions": {
         "ecmaVersion": 2018,
         "sourceType": "module",
